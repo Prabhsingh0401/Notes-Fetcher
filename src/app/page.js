@@ -36,8 +36,8 @@ const NotesFetcher = () => {
   };
 
   return (
-    <div className="flex h-screen bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-      <div className="w-1/4 p-4 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg m-6">
+    <div className="flex flex-col md:flex-row h-screen bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+      <div className="md:w-1/4 p-4 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg m-6">
         <h2 className="text-xl font-bold mb-4 text-white">Select Notes</h2>
         <div className="mb-4">
           <label className="block mb-2 text-white">Branch:</label>
@@ -67,7 +67,7 @@ const NotesFetcher = () => {
           Fetch Notes
         </button>
       </div>
-      <div className="w-3/4 p-4 flex items-center justify-center">
+      <div className="md:w-3/4 p-4 flex items-center justify-center">
         {noteUrl ? (
           <iframe src={noteUrl} className="w-full h-full rounded-lg shadow-lg transition-opacity duration-500 ease-in-out opacity-100" title="Notes" frameBorder="0"></iframe>
         ) : (
